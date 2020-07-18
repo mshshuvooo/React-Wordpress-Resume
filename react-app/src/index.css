@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ 
+img {
+    max-width: 100%;
+    height: auto;
+}
+ 
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 15px;
+    font-weight: 700;
+}
+ 
+a:hover, a:focus{
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+ 
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f5f6f7;
+    color: #44556c;
+    line-height: 1.9;
+}
+
+

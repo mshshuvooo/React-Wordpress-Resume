@@ -1,0 +1,105 @@
+.resume-area {
+    background-color: #fff;
+    padding: 30px 30px 40px 30px;
+}
+
+.resume-section h3 img {
+    max-width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.resume-section h3 {
+    color: #304cfd;
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: Merriweather, serif;
+}
+
+.resume-section {
+    margin-bottom: 60px;
+}
+
+.resume-section:last-child {
+    margin-bottom: 0;
+}
+
+.single-timeline-item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.single-timeline-item:before {
+    content: '';
+    background-color: #304CFD;
+    box-shadow: 0 0 0 3px rgba(48, 76, 253, 0.25);
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    height: 10px;
+    width: 10px;
+}
+
+.single-timeline-item:after {
+    content: "";
+    left: 5px;
+    top: 22px;
+    border-left: 1px solid #F0F0F6;
+    width: 2px;height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.single-timeline-item:last-child:after {
+    display: none;
+}
+
+.single-timeline-item span {
+    background-color: #304cfd;
+    display: inline-block;
+    color: #fff;
+    padding: 2px 26px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.single-timeline-item h4 {
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.single-timeline-item h5 {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 10px;
+    color: #e82a5e;
+}
+
+.resume-section h3 i.fa {
+    margin-right: 7px;
+}
+
+
+/*--- Responsive CSS ---*/
+
+
+    @media (max-width: 767.98px) { 
+        .resume-area{
+            padding: 25px 15px;
+        }
+         
+        .single-timeline-item h4 {
+            font-size: 16px;
+        }
+        
+        .single-timeline-item h5 {
+            font-size: 15px;
+        }
+        
+        .single-timeline-item p {
+            font-size: 15px;
+        }
+    }
+    

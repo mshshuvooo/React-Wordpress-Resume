@@ -1,0 +1,112 @@
+.resumx-contact-form {
+    position: relative;
+}
+
+.resumx-contact-form input, 
+.resumx-contact-form textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    border-radius: 4px;
+}
+
+input.sender-name {
+    width: calc(50% - 5px);
+    margin-right: 5px;
+    display: inline-block;
+}
+
+input.sender-email {
+    width: calc(50% - 5px);
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.resumx-contact-form input:focus, 
+.resumx-contact-form textarea:focus{
+    outline: none;
+    border: 1px solid #333;
+}
+
+.resumx-contact-form button{
+    margin-top: 20px;
+}
+
+.resumx-contact-form button:focus{
+    border: none;
+    outline: none;
+}
+
+.mail-sending {
+    position: absolute;
+    top: 0px;
+    left: -10px;
+    width: calc(100% + 10px);
+    height: calc(100% + 20px);
+    background-color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.mail-sending img {
+    max-height: 100%;
+}
+
+.mail-success-message {
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.single-contact-info {
+    background-color: #fff;
+    text-align: center;
+    padding: 40px 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.single-contact-info i.fa {
+    font-size: 40px;
+    background: -webkit-linear-gradient(45deg, #304cfd, #e82a5e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 7px;
+}
+
+.single-contact-info p {
+    margin: 0;
+    color: #e82a5e;
+    font-weight: 600;
+}
+
+
+/*--- Responsive CSS ---*/
+
+
+    @media (max-width: 767.98px) { 
+        input.sender-name {
+            width: 100%;
+            margin-right: 0;
+        }
+        
+        input.sender-email {
+            width: 100%;
+            margin-left: 0;
+        }
+        
+        .resumx-contact-form button {
+            margin-top: 10px;
+        }
+    }
+    

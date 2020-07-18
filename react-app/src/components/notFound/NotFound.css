@@ -1,0 +1,46 @@
+.notfound-section {
+    background-color: #fff;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.notfound-section h1 {
+    color: #e82a5e;
+    font-size: 110px;
+    line-height: 90px;
+    font-weight: 800;
+}
+
+.notfound-section h3 {
+    margin-bottom: 35px;
+    color: #000;
+}
+
+
+/*--- Responsive CSS ---*/
+
+
+    @media (max-width: 767.98px) { 
+        .notfound-section{
+            padding: 100px 15px;
+        }
+
+        .notfound-section h1{
+            font-size: 70px;
+            line-height: 70px;
+        }
+    }
+   
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .notfound-section{
+            padding: 100px 15px;
+        }
+     }

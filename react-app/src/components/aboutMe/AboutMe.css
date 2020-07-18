@@ -1,0 +1,67 @@
+/*-- Testimonail CSS --*/
+.single-testimonial-item:focus {
+    outline: none;
+}
+
+.single-testimonial-item {
+    background-color: #fff;
+    position: relative;
+    margin-top: 70px;
+    padding: 75px 40px 40px 40px;
+    border-radius: 25px;
+}
+
+.single-testimonial-item img {
+    position: absolute;
+    top: -60px;
+    height: 120px;
+    width: 120px;
+    border: 5px solid #fff;
+    left: 40px;
+    border-radius: 50%;
+}
+
+.single-testimonial-item h4 {
+    font-family: Merriweather, serif;
+    font-size: 18px;
+    margin: 0 0 5px;
+}
+
+.single-testimonial-item span {
+    color: #037bff;
+}
+
+/*-- Skills CSS --*/
+
+.my-skills .col-lg-2 {
+    padding: 0 5px;
+}
+
+.my-skills {
+    margin: 30px 10px 0 10px;
+}
+
+.my-skills img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/*--- Responsive CSS ---*/
+
+
+    @media (max-width: 767.98px) { 
+        .my-skills img {
+            padding-bottom: 10px;
+        }  
+    }
+    
+    
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .my-skills img {
+            padding-bottom: 10px;
+        }
+     }
+    
+    

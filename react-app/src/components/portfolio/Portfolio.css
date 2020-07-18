@@ -1,0 +1,111 @@
+.portfolio-section{
+    background-color: #fff;
+    padding: 30px;
+}
+
+.single-portfolio-item {
+    display: inline-block;
+    width: calc(50% - 10px);
+    height: 255px;
+    margin: 5px;
+}
+
+.single-portfolio-item img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 100%;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.portfolio-items {
+    margin: 0 -5px;
+}
+
+.single-portfolio-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.7);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    visibility: hidden;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.portfolio-info h4 {
+    color: #fff;
+    margin: 0 0 3px;
+    font-size: 20px;
+}
+
+.portfolio-info span {
+    display: block;
+    color: #ff4d8e;
+    font-weight: 600;
+}
+
+.single-portfolio-item:hover .portfolio-info {
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    visibility: visible;
+}
+
+.portfolio-inner{
+    margin-top: 50px;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+}
+
+.single-portfolio-item:hover .portfolio-inner{
+    margin-top: 0;
+}
+
+.single-portfolio-item:hover img{
+    -webkit-transform: scale(1.10);
+            transform: scale(1.10);
+}
+
+
+/*--- Responsive CSS ---*/
+
+
+    @media (max-width: 767.98px) { 
+        .portfolio-section{
+            padding: 25px 15px;
+        }
+
+        .single-portfolio-item {
+            width: 100%;
+            margin: 0 0 5px 0;
+            height: 200px;
+        }
+    }
+    
+    
+    
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+        .single-portfolio-item {
+            height: 200px;
+        }
+     }
+   

@@ -1,0 +1,209 @@
+.resumx-sidebar {
+    position: relative;
+    box-shadow: 0px 40px 50px rgba(103, 118, 128, 0.1) !important;
+    border-radius: 0 0 20px 20px;
+    height: 85vh;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.profile-picture{
+    position: relative;
+    margin-bottom: 10px;
+    height: 43vh;
+}
+
+.profile-picture img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.profile-picture:before, .profile-picture:after{
+    content: '';
+    position: absolute;
+    left: -25%;
+    bottom: -63%;
+    width: 100%;
+    height: 70%;
+    background: #fff;
+    transform: rotate(12deg);
+    -webkit-transform: rotate(12deg);
+    -moz-transform: rotate(12deg);
+    -o-transform: rotate(12deg);
+    
+}
+
+.profile-picture:after{
+    left: auto;
+    right: -25%;
+    transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
+}
+
+.profile-name {
+    font-family: 'Merriweather', serif;
+    font-size: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-name p {
+    margin: 0 0 6px;
+}
+
+p.designation {
+    background-color: #f0f0f5;
+    display: inline-block;
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.social-links{
+    padding-bottom: 15px;
+    position: relative;
+    z-index: 2;
+}
+
+.sidebar-buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    z-index: 10;
+}
+
+.sidebar-buttons a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    color: #e82a5e;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .4s;
+}
+
+.sidebar-buttons a i.fa {
+    padding-left: 7px;
+}
+
+.sidebar-buttons a:hover{
+    color: #4e47e7;
+}
+
+.sidebar-buttons a:before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: -moz-radial-gradient(top,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+    background: -webkit-radial-gradient(top,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+    background: radial-gradient(ellipse at top,#ddd 0%,rgba(255,255,255,0) 70%);
+}
+
+.sidebar-buttons:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    background: -moz-radial-gradient(center,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+    background: -webkit-radial-gradient(center,ellipse cover,#ddd 0%,rgba(255,255,255,0) 70%);
+    background: radial-gradient(ellipse at center,#ddd 0%,rgba(255,255,255,0) 70%);
+}
+
+
+/*--- Responsive CSS ---*/
+
+
+    /*  Extra small devices (portrait phones, less than 576px)*/
+    @media (max-width: 767.98px) { 
+        .mobile-menu-warapper{
+            display: block;
+        }
+        
+        .resume-main-menu{
+            display: none;
+        }
+        
+        .resumx-sidebar {
+            height: auto;
+            margin-bottom: 25px;
+            margin-top: 20px;
+        }
+        
+        .resumx-sidebar .social-links {
+            display: none;
+        }
+        
+        .sidebar-buttons {
+            position: relative;
+        }
+        
+        .profile-name {
+            font-size: 25px;
+        }
+        
+        .profile-picture {
+            height: 280px;
+        }
+        
+        .sidebar-buttons a {
+            font-size: 13px;
+        }
+        
+         
+    }
+    
+    
+    
+    /*  Medium devices (tablets, 768px and up)*/
+    @media (min-width: 768px) and (max-width: 991.98px) { 
+    
+        .resume-main-menu ul li a {
+            font-size: 14px;
+        }
+        
+        .profile-picture {
+            height: 340px;
+        }
+        
+        .resumx-sidebar {
+            margin-bottom: 25px;
+            height: auto;
+        }
+        
+        .section-shadow {
+            height: auto;
+            overflow-x: auto;
+        }
+        
+        .sidebar-buttons {
+            position: inherit;
+            margin-top: 20px;
+        }
+    
+    
+     }
+    
+  
